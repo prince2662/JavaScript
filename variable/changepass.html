@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var password = prompt("Please enter your current password");  
+    var old_password = "1234"; 
+
+  //  if(password!==""){ "plea" }
+    if(password !== old_password){
+        alert("please enter your password.");
+    } else {
+        var new_password = prompt("Enter your new password:");
+        if(new_password !== ""){
+            
+            var confirm_password = prompt("Enter your confirm password:");
+            if(confirm_password !== ""){
+                if(new_password === confirm_password){
+                    alert("Your password has been updated!");
+                } else {
+                    alert("Confirm password does not match.");
+                }
+            } else {
+                alert("Please enter your confirm password.");
+            }
+        } else {
+            alert("Please enter your new password.");
+        }
+    }
+   
+    </script>
+</body>
+</html>

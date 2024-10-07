@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+    // IIFE [Immediately Invoke Function expression]
+
+    (function(){
+        console.log("Hi!");
+        document.write("Hi! <br>");
+        
+    })()
+
+        // simple function
+        function hello() {
+            console.log("Hello");
+            document.write("Hello <br>");
+
+        } hello();
+
+        // Hoisting
+
+        show();
+        function show() {
+            console.log("Run");
+            document.write("Run <br>");
+        }
+        // Anonymous function
+        var run = function () {
+            console.log("The");
+            document.write("The <br>");
+
+        }
+        run();
+
+        // Arrow function
+
+
+        var the = () => {
+            console.log("Function");
+            document.write("Function <br>");
+            
+        }
+        the();
+
+    
+    </script>
+</body>
+
+</html>

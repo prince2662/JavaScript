@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function outer(){
+            document.write("outer function <br>");
+            function inner(){
+                document.write("inner function <br>");
+                function inner2(){
+                    document.write("nested function")
+                }
+                inner2()
+            }
+            inner()
+        }
+        outer()
+
+    </script>
+</body>
+</html>
